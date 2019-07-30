@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+<script src="js/jquery.min.js" charset="utf-8"></script>
+    <script src="js/javascript.js" charset="utf-8"></script>
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myDIV");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+      var loc = document.location=document.location.toString().split('#')[0]+'#anchor';return false;
+    }
+    </script>
+    <link rel="stylesheet" media="all" href="css/style.min.css" data-turbolinks-track="true">
+  </head>
+  <body>
+<div id="mainWrap">
+    Click on an words on the left to start. Then click (don't drag) on an output description on the right.<br><br>
+  <div id="flowWrap">
+    <canvas id="canvas" width="600px" height="450px"></canvas>
+
+    <ul class="module left">
+      <!--Left content starts here -->
+      <li>Shared vision</li>
+      <li>Right mix</li>
+      <li>Quality results</li>
+      <!--Left content ends here -->
+    </ul>
+    <ul class="module right">
+    <!--Right content starts here -->
+      <li>A HPT is committed to achieving the highest standards and outcomes with a shared sense of purpose. Ways in which they may achieve this is that they may lower costs, work faster, and be more innovative</li>
+      <li>A HPT understands the purpose of why they are coming together and the individual roles they need to fulfil to achieve success as a team. This is bigger than a collective team goal. This is the team’s reason for being – why it exists – its cause – its compass.</li>
+      <li>The composition of a HPT comprises of a diverse mix of people, with complementary skills where everyone in the team has clarity of role. Diverse teams bring a great deal of potential than homogenous teams. What’s key though is that all voices are heard around the table and healthy conflict exists.</li>
+    <!--Right content ends here -->
+    </ul>
+  </div>
+  <br>
+  <br>
+  <button onclick="myFunction()">Check answers</button>
+
+<div class="container">
+<div id="myDIV" style="display:none;">
+  <div id="anchor">
+      <!--Results table starts here
+
+    -->
+    <table style="width:100%">
+      <tr>
+        <th class="left-result">
+          Shared vision
+        </th>
+        <th  class="right-result">
+          The composition of a HPT comprises of a diverse mix of people, with complementary skills where everyone in the team has clarity of role. Diverse teams bring a great deal of potential than homogenous teams. What’s key though is that all voices are heard around the table and healthy conflict exists.
+        </th>
+      </tr>
+      <tr>
+        <th class="left-result">
+          Right mix
+        </th>
+        <th  class="right-result">
+          The composition of a HPT comprises of a diverse mix of people, with complementary skills where everyone in the team has clarity of role. Diverse teams bring a great deal of potential than homogenous teams. What’s key though is that all voices are heard around the table and healthy conflict exists.
+        </th>
+      </tr>
+      <tr>
+        <th class="left-result">
+            Quality results
+        </th>
+        <th  class="right-result">
+          A HPT is committed to achieving the highest standards and outcomes with a shared sense of purpose. Ways in which they may achieve this is that they may lower costs, work faster, and be more innovative.
+       </table>
+         <!--Results table ends here -->
+        </th>
+      </tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
