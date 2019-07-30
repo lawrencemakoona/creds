@@ -45,7 +45,7 @@ function stopDrag(endX,endY){
    connecting = false;
 }
 function inputClick(){
-   startX = $(this).offset().left - $("#canvas").offset().left;
+   startX = $(this).offset().left - $("#canvas").offset().left + (1.2* $(this).width());
    startY = $(this).offset().top - $("#canvas").offset().top + (0.5* $(this).height());
    var inputNr = $(this).index();
    currentNode = inputNr;

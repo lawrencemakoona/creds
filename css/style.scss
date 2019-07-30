@@ -41,20 +41,7 @@
     }
   }
 }
-#output {
-  display:inline-block;
-  width:200px;
-  background:white;
-  vertical-align:top;
-  border:5px solid #27ae60;
-  #result {
-     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-     font-size:12px;
-     text-align:left;
-     padding:5px;
-     white-space:pre;
-  }
-}
+
 button {
   margin: 10px;
   display: inline-block;
@@ -76,13 +63,12 @@ button {
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
-  text-align: left;
   padding: 10px;
-  vertical-align: top;
+  tbody {
+    margin: 10px;
+  }
   th {
-    padding: 10px;
-    vertical-align: top;
-
+    padding: 20px;
     border: 1px solid #eee;
   }
   .left-result {
@@ -92,7 +78,7 @@ button {
   }
   .right-result {
     width: 60%;
-
+text-align: left;
     font-weight: 200 !important;
   }
 }
