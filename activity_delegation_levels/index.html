@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+<script src="js/jquery.min.js" charset="utf-8"></script>
+<script src="js/javascript.js" charset="utf-8"></script>
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myDIV");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+      var loc = document.location=document.location.toString().split('#')[0]+'#anchor';return false;
+    }
+    </script>
+
+    <link rel="stylesheet" media="all" href="css/style.min.css" data-turbolinks-track="true">
+  </head>
+  <body>
+<div id="mainWrap">
+    Click on the boxes on the left to start. Then click (don't drag) on a description on the right.<br><br>
+  <div id="flowWrap">
+      <!--Update height accordingly to fit more or less questions and answers -->
+    <canvas id="canvas" width="600px" height="500px"></canvas>
+
+    <ul class="module left">
+      <!--Left content starts here -->
+      <li>Level 1</li>
+      <li>Level 2</li>
+      <li>Level 3</li>
+      <li>Level 4</li>
+      <li>Level 5</li>
+      <!--Left content ends here -->
+    </ul>
+    <ul class="module right">
+    <!--Right content starts here -->
+      <li>Can you read the email and give me a quick summary of it and share your ideas. Then we’ll brainstorm together and come up with a solution. </li>
+      <li>Once you’ve read the email, can you come up with a response? Then shoot it through to me and I’ll send it after I’ve had a look through.</li>
+      <li>I’ve just read the email. Can you reply to the client and tell them that they’ll need to send through a formal form and to call me so I can book them into my schedule to have a face-to-face session with them?</li>
+      <li>Can you read the clients email and send through a response?</li>
+      <li>Can you give me a quick run down of the client’s email? Then I’ll come up with a response.</li>
+    <!--Right content ends here -->
+    </ul>
+  </div>
+  <br>
+  <br>
+  <button onclick="myFunction()">Check answers</button>
+
+<div class="container">
+<div id="myDIV" style="display:none;">
+  <div id="anchor">
+      <!--Results table starts here
+
+    -->
+    <table cellpadding="0" cellspacing="0" style="width:100%; padding: 10px;" >
+      <tr>
+        <th id="result1" class="left-result">
+          Level 1
+        </th>
+        <th  class="right-result">
+          I’ve just read the email. Can you reply to the client and tell them that they’ll need to send through a formal form and to call me so I can book them into my schedule to have a face-to-face session with them?
+        </th>
+      </tr>
+      <tr>
+        <th id="result2" class="left-result">
+          Level 2
+        </th>
+        <th  class="right-result">
+          Can you give me a quick run down of the client’s email? Then I’ll come up with a response.
+        </th>
+      </tr>
+      <tr>
+        <th id="result3" class="left-result">
+            Level 3
+        </th>
+        <th  class="right-result">
+          Can you read the email and give me a quick summary of it and share your ideas. Then we’ll brainstorm together and come up with a solution.
+        </th>
+      </tr>
+      <tr>
+        <th id="result4" class="left-result">
+            Level 4
+        </th>
+        <th  class="right-result">
+          Once you’ve read the email, can you come up with a response? Then shoot it through to me and I’ll send it after I’ve had a look through.
+        </th>
+      </tr>
+      <tr>
+        <th id="result5" class="left-result">
+            Level 5
+        </th>
+        <th  class="right-result">
+          Can you read the clients email and send through a response?
+
+         <!--Results table ends here -->
+        </th>
+      </tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
